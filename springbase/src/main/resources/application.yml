@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: exam-server
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#      discovery:
+#        service-id: config-client
+#    discovery:
+#      enabled: true
+#      service-id: config-client
