@@ -17,10 +17,6 @@ class DefaultConfig {
 class ScanConfig {
 }
 
-//@ComponentScan(excludeFilters = @Filter(type = FilterType.CUSTOM,classes = BeanExclude.class))
-//class ScanExcludeConfig {
-//}
-
 
 @Component
 class NormalBean {
@@ -43,7 +39,9 @@ def defCtx = new AnnotationConfigApplicationContext(DefaultConfig)
 def bean  = defCtx.getBean(NormalBean)
 println(bean.name)
 
-
+//@ComponentScan(excludeFilters = @Filter(type = FilterType.CUSTOM,classes = BeanExclude.class))
+//class ScanExcludeConfig {
+//}
 //
 //def excCtx = new AnnotationConfigApplicationContext(ScanExcludeConfig)
 //def bean1  = excCtx.getBean(NormalBean)

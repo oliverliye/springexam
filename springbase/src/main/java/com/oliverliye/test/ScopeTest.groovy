@@ -51,4 +51,3 @@ assert singleBean1 == singleBean2 : "#### SCOPE_SINGLE ####"
 prototypeBean1 = ctx.getBean(PrototypeScopeBean)
 prototypeBean2 = ctx.getBean(PrototypeScopeBean)
 assert prototypeBean1 != prototypeBean2 : "#### SCOPE_PROTOTYPE ####"
-
